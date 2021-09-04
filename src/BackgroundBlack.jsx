@@ -1,6 +1,6 @@
 import NodeGroupBlack from './NodeGroupBlack'
 import Desc from './Desc'
-import {useState} from 'react'
+import useLocalStorage from './useLocalStorage'
 
 const black = {
     key: 'root',
@@ -127,7 +127,7 @@ const changeNode = (node, key) => {
 }
 
 const BackgroundBlack = ({page}) => {
-    const [node, setNode] = useState(black)
+    const [node, setNode] = useLocalStorage('bookwatch-black', black)
     const handleNode = (key) => {
         const newNode = changeNode(node, key)
         setNode(newNode)

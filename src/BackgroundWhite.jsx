@@ -4,7 +4,7 @@ import useLocalStorage from './useLocalStorage'
 
 const white = {
     key: 'root',
-    active: true,
+    active: false,
     left: 240,
     top: 240,
     children:[
@@ -55,7 +55,7 @@ const white = {
         },
         {
             key:'c',
-            active: true,
+            active: false,
             left: 180,
             top: 233,
             children:[
@@ -67,19 +67,19 @@ const white = {
                     children: [
                         {
                             key:'caa',
-                            active: true,
+                            active: false,
                             left: 42,
                             top: 234,
                             children: [{
                                 key:'caaa',
-                                active: true,
+                                active: false,
                                 left: 85,
                                 top: 138,
                                 children: []
                             },
                             {
                                 key:'caab',
-                                active: true,
+                                active: false,
                                 left: 85,
                                 top: 294,
                                 children: []
@@ -146,8 +146,8 @@ const changeNode = (node, key) => {
     }
 }
 
-const Background = ({page}) => {
-    const [node, setNode] = useLocalStorage(`white-test`, white)
+const Background = () => {
+    const [node, setNode] = useLocalStorage('bookwatch-white', white)
     const handleNode = (key) => {
         const newNode = changeNode(node, key)
         setNode(newNode)

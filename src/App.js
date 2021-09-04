@@ -1,16 +1,20 @@
 import BackgroundWhite from './BackgroundWhite';
 import BackgroundBlack from './BackgroundBlack';
 import {Switch, Route, Link} from 'react-router-dom'
+import BackgroundBrown from './BackgroundBrown';
 
 function App() {
   return (
     <div>
       <Switch>
         <Route path="/white">
-          <BackgroundWhite page="white"/>
+          <BackgroundWhite/>
         </Route>
         <Route path="/black">
-          <BackgroundBlack page="black"/>
+          <BackgroundBlack />
+        </Route>
+        <Route path="/brown">
+          <BackgroundBrown />
         </Route>
       </Switch>
       <div style={{position: 'fixed', bottom: 0, left: 0,display: 'flex', height: 50,width: 500, justifyContent: 'space-around',alignItems: 'center'}}>
