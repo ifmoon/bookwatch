@@ -2,6 +2,7 @@ import BackgroundWhite from './BackgroundWhite';
 import BackgroundBlack from './BackgroundBlack';
 import {Switch, Route, Link} from 'react-router-dom'
 import BackgroundBrown from './BackgroundBrown';
+import Intro from './Intro'
 import './App.css'
 
 function App() {
@@ -16,6 +17,9 @@ function App() {
         </Route>
         <Route path="/brown">
           <BackgroundBrown />
+        </Route>
+        <Route path="/">
+          <Intro/>
         </Route>
       </Switch>
       <div style={{position: 'fixed', bottom: 0, left: 0,display: 'flex', height: 50,width: 500, justifyContent: 'space-around',alignItems: 'center'}}>

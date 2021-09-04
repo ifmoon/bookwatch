@@ -21,7 +21,7 @@ const Desc = ({node}) => {
         {getActiveDesc(node).map(n => 
         <div style={{borderBottom: 'solid 1px #ccc', width: '40vw'}}>
             <p style={{fontWeight: 700, fontSize: '18pt'}}>{n.name}</p>
-            <p style={{fontWeight: 700, fontSize: '14pt'}}>{n.desc}</p>
+            <p style={{fontWeight: 400, fontSize: '14pt'}}>{n.desc}</p>
         </div>)}
     </div>
 }

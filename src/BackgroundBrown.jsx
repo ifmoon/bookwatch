@@ -13,32 +13,32 @@ const brown = {
             active: false,
             left: 176,
             top: 198,
-            name: '수집가',
-            desc: '상시 핸드 추가 : 이색증 +1장',
+            name: '플라스크',
+            desc: '상시 핸드 추가 : 연금술 +1장',
             children:[
                 {
                     key: 'aa',
                     active: false,
                     left: 96,
                     top: 144,
-                    name: '유연한 사고',
-                    desc: '덱 변동 : 카드 소거 2장 / 상시 사서 마법 판정 +1 / 조사 판정 시 펌블 없음',
+                    name: '숙달의 과정',
+                    desc: '덱 변동 : 카드 2장 소거 / [범용] 외 장비 장서 1개 선택 입수',
                     children:[
                         {
                             key: 'aaa',
                             active: false,
                             left: 44,
                             top: 176,
-                            name: '수집가',
-                            desc: '상시 핸드 추가 : 이색증 +1장',
+                            name: '플라스크',
+                                    desc: '상시 핸드 추가 : 연금술 +1장',
                             children:[
                                 {
                                     key: 'aaaa',
                                     active: false,
                                     left: 45,
                                     top: 242,
-                                    name: '마인',
-                                    desc: '덱 변동 : 공허 +3장 / 덱 추가 : [금서 입수] 카드 랜덤 1장 / 공격력 +1 / 사서 장서 1개 선택 입수',
+                                    name: '만병지왕',
+                                    desc: '덱 변동 : 공허 +3장 / [검] 이름을 포함한 장서 1개 선택 입수 / [마검 소환]이 반드시 성공함 / 공격력 + 1 / 프라이즈 획득',
                                     children:[]
                                 }
                             ]
@@ -52,16 +52,16 @@ const brown = {
             active: false,
             left: 217,
             top: 188,
-            name: '집행',
-            desc: '상시 핸드 추가 : 엽견의 그림자 +1장',
+            name: '깨달음',
+            desc: '상시 핸드 추가 : 계몽된 자 +1장',
             children:[
                 {
                     key: 'ba',
                     active: false,
                     left: 151,
                     top: 28,
-                    name: '송곳니',
-                    desc: '덱 변동 : 공허 +3장 / 덱 추가 : 검투사 카드 +1장 / 공격력 + 1 / 엽귀 장서 1개 입수',
+                    name: '개안',
+                    desc: '덱 변동 : 공허 +3장 / 매 전투마다 일시적 마력 +1 / 특기 변동 : 랜덤한 특기 1개 입수',
                     children:[]
                 }
             ]
@@ -71,32 +71,32 @@ const brown = {
             active: false,
             left: 266,
             top: 184,
-            name: '집시',
-            desc: '상시 핸드 추가 : 어릿광대 +1장',
+            name: '색안',
+            desc: '상시 핸드 추가 : 측량사 +1장',
             children:[
                 {
                     key: 'ca',
                     active: false,
                     left: 283,
                     top: 107,
-                    name: '최면술',
-                    desc: '공격력 +1 / 상시 아방궁 마법 판정 +1 / 덱 변동 : 랜덤한 카드 +1장',
+                    name: '완전범죄',
+                    desc: '방어력 +1 / 상시 문호 마법 판정 +1 / 매 세션 펌블 1회 무효',
                     children:[
                         {
                             key: 'caa',
                             active: false,
                             left: 334,
                             top: 67,
-                            name: '집시',
-                            desc: '상시 핸드 추가 : 어릿광대 +1장',
+                            name: '색안',
+                            desc: '상시 핸드 추가 : 측량사 +1장',
                             children:[
                                 {
                                     key: 'caaa',
                                     active: false,
                                     left: 217,
                                     top: 60,
-                                    name: '계몽',
-                                    desc: '덱 변동 : 공허 +2장 / 상시 아방궁 마법 판정 +1 / 방어력 +1 / 아방궁 장서 1개 선택 입수',
+                                    name: '연쇄반응',
+                                    desc: '덱 변동 : 공허 +2장 / 상시 입회인 판정 +1 / 공격력 +1 / 연쇄 장서 1개 입수',
                                     children:[]
                                 },
                                 {
@@ -104,8 +104,8 @@ const brown = {
                                     active: false,
                                     left: 350,
                                     top: 139,
-                                    name: '융합',
-                                    desc: '덱 변동 : 카드 2장 소거 / 상시 아방궁 마법 판정 +1 / 근원력 +1 / 개조 장서 1개 입수',
+                                    name: '그림자에서 태어나다',
+                                    desc: '덱 변동 : 카드 소거 2장 / 상시 입회인 판정 +1 / 근원력 +1 / 상시 핸드 추가 : 집필가 +1장',
                                     children:[]
                                 }
                             ]
@@ -119,16 +119,16 @@ const brown = {
             active: false,
             left: 362,
             top: 215,
-            name: '플라스크',
-            desc: '상시 핸드 추가 : 연금술 +1장',
+            name: '순례자',
+            desc: '상시 핸드 추가 : 무모한 모험 +1장',
             children:[
                 {
                     key: 'da',
                     active: false,
                     left: 413,
                     top: 187,
-                    name: '대규모 실험',
-                    desc: '덱 변동 : 카드 2장 소거 / 범용 장비 장서 1개 입수',
+                    name: '삼위일체',
+                    desc: '상시 적용 : 보유 장서의 3종의 숫자가 전부 같으면, 공격력, 방어력, 근원력, 마력 +1 추가',
                     children:[]
                 }
             ]
@@ -138,32 +138,32 @@ const brown = {
             active: false,
             left: 289,
             top: 267,
-            name: '마법적 지식',
-            desc: '상시 핸드 추가 : 맹렬한 화염 또는 바루나스트라 카드 +1장',
+            name: '야만인',
+            desc: '상시 핸드 추가 : 루나리스의 여사제 +1장',
             children:[
                 {
                     key: 'ea',
                     active: false,
                     left: 338,
                     top: 285,
-                    name: '격류하는 마력',
-                    desc: '덱 변동 : 공허 2장 추가 / 범용 주문 장서 1개 선택 입수',
+                    name: '마석학',
+                    desc: '덱 변동 : 카드 소거 2장 / 매 세션 시작 시 장서 1개에 [추가데미지1] 부여, 중첩 불가능 / 공격력 +1',
                     children:[
                         {
                             key: 'eaa',
                             active: false,
                             left: 375,
                             top: 368,
-                            name: '마법적 지식',
-                            desc: '상시 핸드 추가 : 맹렬한 화염 또는 바루나스트라 카드 +1장',
+                            name: '야만인',
+                            desc: '상시 핸드 추가 : 루나리스의 여사제 +1장',
                             children:[
                                 {
                                     key: 'eaaa',
                                     active: false,
                                     left: 274,
                                     top: 373,
-                                    name: '죽어가는 빛',
-                                    desc: '덱 변동 : 공허 4장 추가 / 상시 핸드 추가 : 죽어가는 빛 카드 +1장 / 마소 최대 충전치 두 배',
+                                    name: '마석여왕',
+                                    desc: '덱 변동 : 카드 소거 2장 / 매 세션 시작 시 장서 1개에 [코스트 –1] 부여, 중첩 불가능 / 외전 장서 1개 선택 입수',
                                     children:[]
                                 }
                             ]
@@ -175,18 +175,18 @@ const brown = {
     ]
 }
 
-const changeNode = (node, key) => {
+const changeNode = (node, key, parentActive) => {
     return {
         ...node,
-        active: node.key === key ? !node.active : node.active,  
-        children: node.children.map(child => changeNode(child, key))
+        active: node.key === key && parentActive ? !node.active : node.active,  
+        children: node.children.map(child => changeNode(child, key, node.active))
     }
 }
 
 const BackgroundBrown = () => {
     const [node, setNode] = useLocalStorage('bookwatch-brown', brown)
     const handleNode = (key) => {
-        const newNode = changeNode(node, key)
+        const newNode = changeNode(node, key, true)
         setNode(newNode)
     }
 
