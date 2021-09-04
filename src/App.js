@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import BackgroundWhite from './BackgroundWhite';
+import BackgroundBlack from './BackgroundBlack';
+import {Switch, Route, Link} from 'react-router-dom'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Switch>
+        <Route path="/white">
+          <BackgroundWhite page="white"/>
+        </Route>
+        <Route path="/black">
+          <BackgroundBlack page="black"/>
+        </Route>
+      </Switch>
+      <div style={{position: 'fixed', bottom: 0, left: 0,display: 'flex', height: 50,width: 500, justifyContent: 'space-around',alignItems: 'center'}}>
+        <Link to={"/white"}>엄마는외계인</Link>
+        <Link to={"/black"}>아몬드봉봉</Link>
+        <Link to={"/brown"}>슈팅스타</Link>
+      </div>
     </div>
   );
 }
