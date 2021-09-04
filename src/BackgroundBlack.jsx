@@ -4,7 +4,7 @@ import useLocalStorage from './useLocalStorage'
 
 const black = {
     key: 'root',
-    active: false,
+    active: true,
     left: 240,
     top: 240,
     children: [{
