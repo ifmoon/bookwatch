@@ -5,7 +5,7 @@ const Node = ({left,top, id, active, handleNode}) => {
     return <div 
     style={{position:'absolute', left, top}}
     onClick={()=>handleNode(id)}
-    ><img src={require(`./resource/white/${id}.png`).default} style={{opacity: active ? 100 : 0}}/></div>
+    ><img src={require(`./resource/white/${id}.png`).default} alt={id} style={{opacity: active ? 100 : 0}}/></div>
 }
 
 const renderNode = (node, handleNode) => {
