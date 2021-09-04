@@ -17,7 +17,7 @@ const getActiveDesc = (nodes) => {
 }
 
 const Desc = ({node}) => {
-    return <div style={{overflow: 'scroll'}}>
+    return <div>
         {getActiveDesc(node).map(n => <><li style={{fontSize: '12pt'}}>{n.name}<ul><li>{n.desc}</li></ul></li></>)}
     </div>
 }

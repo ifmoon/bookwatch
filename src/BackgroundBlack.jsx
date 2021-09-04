@@ -1,6 +1,5 @@
 import NodeGroupBlack from './NodeGroupBlack'
 import Desc from './Desc'
-import useLocalStorage from './useLocalStorage'
 import {useState} from 'react'
 
 const black = {
@@ -136,7 +135,7 @@ const BackgroundBlack = ({page}) => {
 
     return <div style={{display: 'flex'}}>
         <div style={{position:'relative', width: 500, height: 500}}>
-         <img src={require(`./resource/black/background.png`).default} style={{position:'absolute', width: '100%', height: '100%'}}/>
+         <img src={require(`./resource/black/background.png`).default} alt='backgroud' style={{position:'absolute', width: '100%', height: '100%'}}/>
          <NodeGroupBlack node={node} handleNode={handleNode} page={page} /> 
         </div>
         <Desc node={node}/>

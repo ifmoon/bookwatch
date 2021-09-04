@@ -155,7 +155,7 @@ const Background = ({page}) => {
 
     return <div style={{display: 'flex'}}>
         <div style={{position:'relative', width: 500, height: 500}}>
-         <img src={require(`./resource/white/background.png`).default} style={{position:'absolute', width: '100%', height: '100%'}}/>
+         <img src={require(`./resource/white/background.png`).default} alt='backgroud' style={{position:'absolute', width: '100%', height: '100%'}}/>
          <NodeGroup node={node} handleNode={handleNode} /> 
         </div>
         <Desc node={node}/>
