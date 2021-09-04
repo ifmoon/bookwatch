@@ -2,10 +2,11 @@ import BackgroundWhite from './BackgroundWhite';
 import BackgroundBlack from './BackgroundBlack';
 import {Switch, Route, Link} from 'react-router-dom'
 import BackgroundBrown from './BackgroundBrown';
+import './App.css'
 
 function App() {
   return (
-    <div>
+    <div style={{minWidth: 1000}}>
       <Switch>
         <Route path="/white">
           <BackgroundWhite/>
@@ -18,9 +19,9 @@ function App() {
         </Route>
       </Switch>
       <div style={{position: 'fixed', bottom: 0, left: 0,display: 'flex', height: 50,width: 500, justifyContent: 'space-around',alignItems: 'center'}}>
-        <Link to={"/white"}>엄마는외계인</Link>
-        <Link to={"/black"}>아몬드봉봉</Link>
-        <Link to={"/brown"}>슈팅스타</Link>
+        <Link to={"/white"} style={{fontSize: '18pt'}}>사라스바티</Link>
+        <Link to={"/black"} style={{fontSize: '18pt'}}>크투가</Link>
+        <Link to={"/brown"} style={{fontSize: '18pt'}}>페르세포네</Link>
       </div>
     </div>
   );

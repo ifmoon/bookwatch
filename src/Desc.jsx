@@ -17,8 +17,12 @@ const getActiveDesc = (nodes) => {
 }
 
 const Desc = ({node}) => {
-    return <div>
-        {getActiveDesc(node).map(n => <><li style={{fontSize: '12pt'}}>{n.name}<ul><li>{n.desc}</li></ul></li></>)}
+    return <div style={{marginLeft:12}}>
+        {getActiveDesc(node).map(n => 
+        <div style={{borderBottom: 'solid 1px #ccc', width: '40vw'}}>
+            <p style={{fontWeight: 700, fontSize: '18pt'}}>집중</p>
+            <p style={{fontWeight: 700, fontSize: '14pt'}}>집중하세요 제발</p>
+        </div>)}
     </div>
 }
 
