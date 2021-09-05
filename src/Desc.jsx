@@ -1,3 +1,5 @@
+import { Scrollbars } from 'react-custom-scrollbars';
+
 const getActiveDesc = (nodes) => {
     const queue = [nodes]
     const res = []
@@ -18,11 +20,13 @@ const getActiveDesc = (nodes) => {
 
 const Desc = ({node}) => {
     return <div style={{marginLeft:12}}>
-        {getActiveDesc(node).map(n => 
-        <div style={{borderBottom: 'solid 1px #ccc', width: '40vw'}}>
-            <p style={{fontWeight: 700, fontSize: '18pt'}}>{n.name}</p>
-            <p style={{fontWeight: 400, fontSize: '14pt'}}>{n.desc}</p>
-        </div>)}
+        <Scrollbars style={{ width: '40vw', height: '90vh' }}>
+            {getActiveDesc(node).map(n => 
+            <div style={{borderBottom: 'solid 1px #ccc', width: '100%'}}>
+                <p style={{fontWeight: 700, fontSize: '18pt'}}>{n.name}</p>
+                <p style={{fontWeight: 400, fontSize: '14pt'}}>{n.desc}</p>
+            </div>)}
+        </Scrollbars>
     </div>
 }
 
