@@ -1,7 +1,7 @@
 import Desc from './IntroDesc'
 import { useSpring, animated } from 'react-spring'
 const Background = () => {
-    const props = useSpring({from: { rotateZ: 0, opacity: 0 }, to: { rotateZ: 360, opacity: 1 },config: {duration:1500}})
+    const props = useSpring({from: { rotateZ: 0, opacity: 0 }, to: { rotateZ: 360, opacity: 1 },config: {duration:2800}})
     return <div style={{display: 'flex'}}>
         <animated.div style={props}>
         <div style={{position:'relative', width: 500, height: 500}}>
